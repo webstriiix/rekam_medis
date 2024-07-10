@@ -1,0 +1,166 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  min-width: 60vw;
+}
+
+.item a{
+  text-decoration: none;
+}
+
+.item a.refresh{
+  color: blue;
+}
+
+.item a.add, .add{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #006495;
+  color: white;
+}
+
+.add:hover{
+  cursor: pointer;
+}
+
+.item .search button {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #006495;
+}
+
+.item .search input[type='text']{
+  width: 20vw;
+  padding: 0 5px;
+}
+
+.item .search button:hover{
+  cursor: pointer;
+}
+
+.item .searchNumber button {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: #006495;
+}
+
+
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 70vw;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.61);
+  }
+  
+  table th{
+    border-bottom: 1px solid #ddd;
+  }
+
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  table td.edit{
+    display: flex;
+    font-size: large;
+    justify-content: space-around;
+  }
+
+
+  .edit a{
+    margin: 0 5px;
+  }
+
+  a i.edit{
+    color: gold;
+  }
+
+  a i.delete{
+    color: red;
+  }
+
+  a.link-search-btn{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+  }
+  .link-search-btn{
+    background-color: #006495;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .table-container{
+    height: 50vh;
+    padding: 0 5px;
+    overflow-y: scroll;
+
+  }
+
+  table th {
+    font-weight: 600;
+  }
+  table tr:hover {
+    background-color: #e9e9e9;
+  }
+
+  table tr.head:hover{
+    background-color: #ffffff;
+  }
+
+  .page-item {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-item .float-left{
+    background-color: #006495;
+    height: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .page-item .float-right ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+
+  .page-item .float-right ul li{
+    display: inline-block;
+  }
+
+  .page-item .float-right ul li a {
+    display: block;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #ccc;
+      margin: 0 4px;
+      transition: background-color 0.3s;
+  }
+
+  .page-item .float-right ul li a.active{
+    background-color: #006495;
+    color: #fff;
+    border-color: #333;
+  }
+
+  .page-item .float-right ul li a:hover:not(.active){
+    background-color: #f5f5f5;
+  }

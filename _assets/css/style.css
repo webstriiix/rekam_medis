@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #00b3c9;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.sidebar a h1{
+    width: 230px;
+}
+
+.sidebar ul {
+list-style-type: none;
+margin-top: 50px;
+
+}
+
+.sidebar li {
+margin-bottom: 5px;
+padding: 10px;
+width: max-content;
+font-size: larger;
+border-radius: 10px;
+}
+
+.sidebar a {
+color: #fff;
+text-decoration: none;
+}
+
+
+.sidebar li:hover{
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.247);
+}
+
+.sidebar li:hover a{
+    color: #006495;
+}
+
+
+.sidebar ul li.active {
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.247);
+}
+
+.sidebar li.active a{
+    color: #006495;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 90vw;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.box button:hover{
+    cursor: pointer;
+}
+
+.box button.edit{
+    color: white;
+    background-color: rgb(236, 201, 3);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.box button.delete{
+    color: white;
+    background-color: maroon;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.danger{
+    color: white;
+    font-size: medium;
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.green {
+    color: white;
+    font-size: medium;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    width: max-content;
+}

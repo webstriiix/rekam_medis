@@ -1,0 +1,50 @@
+.custom-select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .select-selected {
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .select-items {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    display: none;
+  }
+  
+  .select-item {
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the search input */
+  .custom-select [type="text"] {
+    width: 85%;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  
+  /* Hide the dropdown items by default */
+  .select-hide {
+    display: none;
+  }
+  
+  /* Show the dropdown items when the select is clicked */
+  .custom-select.show .select-hide {
+    
+    display: block;
+  }
+  
